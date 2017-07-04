@@ -28,7 +28,7 @@ $ bundle install --without production
 
 ### 2.2. database.yml
 
-**config/database.yml**의 production 부분을 아래와 같이 작성한다. 여기서 [MY-APP-NAME]은 본인의 Project 이름으로 바꿔 넣으면 된다.
+**config/database.yml**의 production 부분을 아래와 같이 작성한다. 여기서 **MY-APP-NAME**은 본인의 Project 이름으로 바꿔 넣으면 된다.
 
 ```yaml
 production:
