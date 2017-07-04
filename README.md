@@ -63,7 +63,7 @@ $ git push
 
 ### 3.1. Github에서 Project 가져오기
 
-`git clone` 명령어로 본인의 project를 가져온다. 여기서 **GITHUB-URL-HTTPS**는 github repository의 **Clone whth HTTPS**에서 확인 가능한 URL이다.
+`git clone` 명령어로 본인의 project를 가져온다. 여기서 **GITHUB-URL-HTTPS**는 github repository의 'Clone whth HTTPS'에서 확인 가능한 URL이다.
 
 ```console
 $ git clone [GITHUB-URL-HTTPS]
