@@ -71,7 +71,7 @@ $ git clone [GITHUB-URL-HTTPS]
 
 ### 3.2. Auto Deploy Script 가져오기
 
-git clone` 명령어로 **Auto Deploy Script**를 가져온다. 지금 보고 있는 이 문서의 repository이다.
+`git clone` 명령어로 **Auto Deploy Script**를 가져온다. 지금 보고 있는 이 문서의 repository이다.
 
 ```console
 $ git clone https://github.com/likelion-campus/auto-deploy-script.git
