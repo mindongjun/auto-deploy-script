@@ -108,7 +108,7 @@ $ exec $SHELL
 
 #### 3.3.4. 2.sh 실행
 
-shell도 refresh 했겠다 `2.sh`를 실행하여 나머지 부분의 설정을 계속하자.
+`2.sh`를 실행하여 나머지 부분의 설정을 계속하자.
 `2.sh`에는 몇가지 parameter를 함께 넣어주어야 하는데 **PROJECT-FOLDER-NAME**은 *3.1*에서 `git clone`하였을때, 받아지는 github repository의 이름이다. `ls` 명령어로 확인이 가능하다.
 **DATABASE-PASSWORD**는 *3.3.2*에서 설정한 mysql 암호를 넣어준다.
 
