@@ -1,10 +1,10 @@
-# Auto Deploy ShellScript
+# Auto Deploy Script
 
-Written By @capollux
+Shell Script for AWS Deploy. Written By @capollux.
 
 ## 1. AWS EC2 생성
 
-`Ubuntu 16.04 LTS`로 EC2 Instance를 생성한다. 본 스크립트는 해당 OS를 바탕으로 작성되었다.
+**Ubuntu 16.04 LTS**로 EC2 Instance를 생성한다. 본 스크립트는 해당 OS를 바탕으로 작성되었다.
 
 ## 2. Project 설정 (Client)
 
@@ -55,7 +55,7 @@ $ bundle exec figaro install
 
 ```console
 $ git add -A
-$ git commit -m "For auto-deploy script"
+$ git commit -m "For auto deploy script"
 $ git push
 ```
 
@@ -80,7 +80,7 @@ $ git clone https://github.com/likelion-campus/auto-deploy-script.git
 ### 3.3. Auto Deploy Script 실행하기
 
 
-#### 3.3.1. Script 실헹 권한
+#### 3.3.1. Script 실행 권한
 
 Rails application deploy를 매우 편리하게 해주기 위하여 script를 작성하였다. 아까 받은 Auto Deploy Script를 실행하면 모든 설정이 자동으로 될 것이다. 지금은 단순한 text 파일인데, 이 파일을 실행 가능한 script 파일로 바꿔주기 위하여 해당 파일에 실행 권한을 부여하자.
 
