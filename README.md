@@ -1,6 +1,6 @@
 # Auto Deploy Script
 
-Shell Script for AWS Deploy. Written By @capollux.
+Shell Script for AWS Deploy. Written By [황준우](https://github.com/capollux).
 
 ## 1. AWS EC2 생성
 
