@@ -85,7 +85,7 @@ $ git clone https://github.com/likelion-net/auto-deploy-script.git
 Rails application deploy를 매우 편리하게 해주기 위하여 script를 작성하였다. 아까 받은 Auto Deploy Script를 실행하면 모든 설정이 자동으로 될 것이다. 지금은 단순한 text 파일인데, 이 파일을 실행 가능한 script 파일로 바꿔주기 위하여 해당 파일에 실행 권한을 부여하자.
 
 ```console
-$ sudo chmod u+x auto-deploy-script/*.sh
+$ sudo chmod u+x ~/auto-deploy-script/*.sh
 ```
 
 #### 3.3.2. 1.sh 실행
@@ -93,7 +93,7 @@ $ sudo chmod u+x auto-deploy-script/*.sh
 실행 권한이 부여되면 실행을 해보자. 우선 `1.sh` 먼저.
 
 ```console
-$ ./auto-deploy-script/1.sh
+$ ~/auto-deploy-script/1.sh
 ```
 
 실행을 하고 기다리다보면 mysql 암호를 설정하는 창이 나온다. 원하는 암호를 입력하고 넘어가자. 이 암호는 추후에 필요하므로 기억할 것!
@@ -113,10 +113,7 @@ $ exec $SHELL
 **DATABASE-PASSWORD**는 *3.3.2*에서 설정한 mysql 암호를 넣어준다.
 
 ```console
-$ ./auto-deploy-script/2.sh [PROJECT-FOLDER-NAME] [DATABASE-PASSWORD]
+$ ~/auto-deploy-script/2.sh [PROJECT-FOLDER-NAME] [DATABASE-PASSWORD]
 ```
 
 시간이 조금 걸리는데, 모든 과정을 마치면 브라우저에서 EC2의 Public IP로 접속을 하여 Application이 돌아가는 것을 확인 할 수 있다.
-
-
-
