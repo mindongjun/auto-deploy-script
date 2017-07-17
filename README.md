@@ -117,3 +117,25 @@ $ ~/auto-deploy-script/2.sh [PROJECT-FOLDER-NAME] [DATABASE-PASSWORD]
 ```
 
 시간이 조금 걸리는데, 모든 과정을 마치면 브라우저에서 EC2의 Public IP로 접속을 하여 Application이 돌아가는 것을 확인 할 수 있다.
+
+
+## 4. Update Deployed Project
+
+### 4.1. git pull
+
+업데이트 된 Rails Application을 `git pull` 명령어로 내려받는다. 내려받을 때는 해당 Project folder로 들어간 후, `git pull` 명령어를 입력해준다.
+
+```console
+$ cd ~/[PROJECT-FOLDER-NAME]
+$ git pull
+```
+
+### 4.2. Bundle Install & Asset Precompile & Restart Rails Application
+
+Gemfile이 변경되었다면 `bundle install`로 추가된 gem들을 설치해준다. production 환경에서는 asset pipeline이 성능 향상을 위하여 사용될 assets들을 정리해서 static한 파일로 만들고, 그 파일들을 불러온다. 그 작업을 하는 명령어를 입력한다. 마지막으로 rails application을 restart 해주면 변경사항이 적용된 사이트를 확인 할 수 있다.
+
+```console
+$ bundle install
+$ bundle exec rake assets:precompile RAILS_ENV=production
+$ touch tmp/restart.txt
+```
