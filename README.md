@@ -119,7 +119,7 @@ $ ~/auto-deploy-script/2.sh [PROJECT-FOLDER-NAME] [DATABASE-PASSWORD]
 시간이 조금 걸리는데, 모든 과정을 마치면 브라우저에서 EC2의 Public IP로 접속을 하여 Application이 돌아가는 것을 확인 할 수 있다.
 
 
-## 4. Update Deployed Project
+## 4. Update Deployed Project (Server)
 
 ### 4.1. git pull
 
