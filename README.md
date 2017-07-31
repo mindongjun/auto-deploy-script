@@ -112,12 +112,22 @@ $ exec $SHELL
 `2.sh`에는 몇가지 parameter를 함께 넣어주어야 하는데 **PROJECT-FOLDER-NAME**은 *3.1*에서 `git clone`하였을때, 받아지는 github repository의 이름이다. `ls` 명령어로 확인이 가능하다.
 **DATABASE-PASSWORD**는 *3.3.2*에서 설정한 mysql 암호를 넣어준다.
 
+`2.sh`를 실행하기 전에, gem 설치에 필요한 프로그램들(dependencies)을 반드시 설치한 후, 스크립트를 실행한다.
+기본적인 gem을 위한 프로그램들은 스크립트 안에서 미리 설치하도록 되어있지만, 사용자가 별도로 추가한 gem은 경우에 따라 추가적인 gem이나 프로그램이 필요할 수 있다. 
+
 ```console
 $ ~/auto-deploy-script/2.sh [PROJECT-FOLDER-NAME] [DATABASE-PASSWORD]
 ```
 
 시간이 조금 걸리는데, 모든 과정을 마치면 브라우저에서 EC2의 Public IP로 접속을 하여 Application이 돌아가는 것을 확인 할 수 있다.
 
+#### 3.3.5. Gem 설치 도중 error 발생 시
+
+만약 gem 설치 도중 에러가 발생했다면, 에러를 수정한 후에 `after_error.sh` 스크립트 파일을 실행하여 남은 deploy 과정을 마무리한다.
+
+```console
+$ ~/auto-deploy-script/after_error.sh [PROJECT-FOLDER-NAME] [DATABASE-PASSWORD]
+```
 
 ## 4. Update Deployed Project (Server)
 
