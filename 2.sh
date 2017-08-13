@@ -41,4 +41,4 @@ sudo sed -i -e "s/root \/var\/www\/html;/root \/home\/ubuntu\/$1\/public; passen
 sudo service nginx restart
 
 # Assets precompile & restart
-cd $1 && bundle exec rake db:create RAILS_ENV=production && bundle exec rake db:migrate RAILS_ENV=production && bundle exec rake db:seed RAILS_ENV=production && bundle exec rake assets:precompile RAILS_ENV=production && touch tmp/restart.txt
+cd $1 && bundle exec rake db:create RAILS_ENV=delevopment && bundle exec rake db:migrate RAILS_ENV=development && bundle exec rake db:seed RAILS_ENV=development && bundle exec rake assets:precompile RAILS_ENV=development && touch tmp/restart.txt
