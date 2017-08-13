@@ -8,7 +8,7 @@ cd ~
 if [ -e ~/$1/.ruby-version ]; then
   rv="$(cat ~/$1/.ruby-version)"
 else
-  rv="2.3.4"
+  rv="2.4.1"
 fi
 rbenv install -v $rv
 rbenv global $rv
